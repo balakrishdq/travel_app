@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:travel_app/widgets/from_to_field.dart';
-import 'package:travel_app/widgets/swap_vert.dart';
-import 'package:travel_app/widgets/tabbar_widget.dart';
+import 'package:travel_app/widgets/second_screen/from_to_field.dart';
+import 'package:travel_app/widgets/second_screen/tabbar_widget.dart';
 
 class CardWithTabs extends StatelessWidget {
   const CardWithTabs({super.key});

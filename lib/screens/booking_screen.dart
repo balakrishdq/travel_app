@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:travel_app/widgets/card_with_tabs.dart';
-import 'package:travel_app/widgets/dropdown_widget.dart';
-import 'package:travel_app/widgets/swap_vert.dart';
-import 'package:travel_app/widgets/title_and_profile.dart';
+import 'package:travel_app/widgets/second_screen/card_with_data.dart';
+import 'package:travel_app/widgets/second_screen/card_with_tabs.dart';
+import 'package:travel_app/widgets/second_screen/dropdown_widget.dart';
+import 'package:travel_app/widgets/second_screen/swap_vert.dart';
+import 'package:travel_app/widgets/second_screen/title_and_profile.dart';
 
 class BookingScreen extends StatefulWidget {
   const BookingScreen({super.key});
@@ -37,8 +38,10 @@ class _BookingScreenState extends State<BookingScreen> {
               SwapVert(),
             ],
           ),
-          Gap(30),
+          Gap(20),
           DropdownWidget(),
+          Gap(20),
+          CardWithData(),
         ],
       ),
     );
