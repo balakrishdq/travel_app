@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:travel_app/widgets/second_screen/card_with_data.dart';
-import 'package:travel_app/widgets/second_screen/card_with_tabs.dart';
-import 'package:travel_app/widgets/second_screen/dropdown_widget.dart';
-import 'package:travel_app/widgets/second_screen/swap_vert.dart';
-import 'package:travel_app/widgets/second_screen/title_and_profile.dart';
+import 'package:travel_app/widgets/booking_screen/card_with_data.dart';
+import 'package:travel_app/widgets/booking_screen/card_with_tabs.dart';
+import 'package:travel_app/widgets/booking_screen/dropdown_widget.dart';
+import 'package:travel_app/widgets/booking_screen/swap_vert.dart';
+import 'package:travel_app/widgets/booking_screen/title_and_profile.dart';
 
 class BookingScreen extends StatefulWidget {
   const BookingScreen({super.key});
@@ -17,7 +17,7 @@ class _BookingScreenState extends State<BookingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFEEEEEE),
+      backgroundColor: Color(0xFFd9d9d9),
       body: Column(
         children: [
           Stack(
