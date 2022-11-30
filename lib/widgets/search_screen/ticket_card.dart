@@ -22,103 +22,101 @@ class TicketCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xFFe6e6e6),
-      body: Padding(
-        padding: const EdgeInsets.all(30.0),
-        child: Container(
-          height: 140,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.white,
-                blurRadius: 3,
-                spreadRadius: 0.5,
-                offset: Offset(0, 1),
-              )
-            ],
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
+    return Container(
+      height: 140,
+      width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.white,
+            blurRadius: 1,
+            offset: Offset(0, 1),
+          )
+        ],
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Gap(10),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Gap(10),
                 Text(
-                  title,
+                  this.title,
                   style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Gap(20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Text(
-                      departure,
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.amber,
-                      ),
-                    ),
-                    Dash(
-                      direction: Axis.horizontal,
-                      length: 70,
-                    ),
-                    Icon(
-                      Icons.flight_outlined,
-                      color: Colors.black,
-                    ),
-                    Dash(
-                      direction: Axis.horizontal,
-                      length: 70,
-                    ),
-                    Text(
-                      arrival,
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.greenAccent,
-                      ),
-                    ),
-                  ],
-                ),
-                Gap(5),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      depCityname,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.grey,
-                      ),
-                    ),
-                    Text(
-                      duration,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.black,
-                      ),
-                    ),
-                    Text(
-                      arrCityname,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.grey,
-                      ),
-                    ),
-                  ],
-                )
               ],
             ),
-          ),
+            Gap(20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text(
+                  this.departure,
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.amber,
+                  ),
+                ),
+                Dash(
+                  direction: Axis.horizontal,
+                  length: 70,
+                ),
+                Icon(
+                  Icons.flight_outlined,
+                  color: Colors.black,
+                ),
+                Dash(
+                  direction: Axis.horizontal,
+                  length: 70,
+                ),
+                Text(
+                  this.arrival,
+                  style: TextStyle(
+                    fontSize: 28,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.greenAccent,
+                  ),
+                ),
+              ],
+            ),
+            Gap(5),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  this.depCityname,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.grey,
+                  ),
+                ),
+                Text(
+                  this.duration,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.black,
+                  ),
+                ),
+                Text(
+                  this.arrCityname,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.grey,
+                  ),
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );
