@@ -26,7 +26,7 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(top: 30),
+              padding: EdgeInsets.only(top: 30, left: 10, right: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

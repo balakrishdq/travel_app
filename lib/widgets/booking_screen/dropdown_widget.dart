@@ -52,7 +52,7 @@ class DropdownWidget extends StatelessWidget {
                 );
               }).toList(),
               hint: Text(
-                "Choose Category",
+                "Highest Price",
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 14,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/screens/booking_screen.dart';
-import 'package:travel_app/screens/search_screen.dart';
+import 'package:travel_app/screens/flight_list.dart';
+import 'package:travel_app/widgets/flights_list/flight_card.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         backgroundColor: Colors.white,
       ),
-      home: const SearchScreen(),
+      home: const FlightList(),
     );
   }
 }
