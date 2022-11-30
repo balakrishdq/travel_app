@@ -12,7 +12,6 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFd9d9d9),
       body: SingleChildScrollView(
         child: Stack(
           children: [

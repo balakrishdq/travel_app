@@ -17,7 +17,6 @@ class _BookingScreenState extends State<BookingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFd9d9d9),
       body: Column(
         children: [
           Stack(

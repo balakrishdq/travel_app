@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/screens/booking_screen.dart';
-import 'package:travel_app/screens/flight_list.dart';
-import 'package:travel_app/widgets/flights_list/flight_card.dart';
+import 'package:travel_app/screens/boarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,10 +15,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        scaffoldBackgroundColor: Color(0xFFe6e6e6),
         primarySwatch: Colors.blue,
         backgroundColor: Colors.white,
       ),
-      home: const FlightList(),
+      home: const BoardingScreen(),
     );
   }
 }

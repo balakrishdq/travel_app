@@ -22,7 +22,7 @@ class FlightCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 20, left: 30, right: 20),
       child: Container(
-        height: 150,
+        height: 140,
         width: double.infinity,
         decoration:
             BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: [
@@ -57,7 +57,7 @@ class FlightCard extends StatelessWidget {
                       'Departure',
                       style: TextStyle(
                           color: Colors.grey,
-                          fontSize: 18,
+                          fontSize: 17,
                           fontWeight: FontWeight.w500),
                     ),
                     Gap(30),
@@ -65,7 +65,7 @@ class FlightCard extends StatelessWidget {
                       'Arrive',
                       style: TextStyle(
                           color: Colors.grey,
-                          fontSize: 18,
+                          fontSize: 17,
                           fontWeight: FontWeight.w500),
                     )
                   ],
@@ -76,7 +76,7 @@ class FlightCard extends StatelessWidget {
                       depTime,
                       style: TextStyle(
                           color: Colors.blue,
-                          fontSize: 20,
+                          fontSize: 19,
                           fontWeight: FontWeight.w500),
                     ),
                     Gap(30),
@@ -84,7 +84,7 @@ class FlightCard extends StatelessWidget {
                       arrTime,
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: 20,
+                          fontSize: 19,
                           fontWeight: FontWeight.w500),
                     ),
                   ],
@@ -96,7 +96,7 @@ class FlightCard extends StatelessWidget {
                       'Estimation',
                       style: TextStyle(
                           color: Colors.grey,
-                          fontSize: 18,
+                          fontSize: 17,
                           fontWeight: FontWeight.w500),
                     ),
                     Gap(30),
@@ -104,7 +104,7 @@ class FlightCard extends StatelessWidget {
                       'Price',
                       style: TextStyle(
                         color: Colors.grey,
-                        fontSize: 18,
+                        fontSize: 17,
                         fontWeight: FontWeight.w500,
                       ),
                     )
@@ -116,7 +116,7 @@ class FlightCard extends StatelessWidget {
                       estTime,
                       style: TextStyle(
                           color: Colors.cyan,
-                          fontSize: 20,
+                          fontSize: 19,
                           fontWeight: FontWeight.w500),
                     ),
                     Gap(30),
@@ -124,7 +124,7 @@ class FlightCard extends StatelessWidget {
                       '\$${price}',
                       style: TextStyle(
                           color: Colors.amber,
-                          fontSize: 20,
+                          fontSize: 19,
                           fontWeight: FontWeight.w500),
                     ),
                   ],

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dash/flutter_dash.dart';
 import 'package:gap/gap.dart';
 import 'package:travel_app/widgets/booking_screen/dropdown_widget.dart';
 import 'package:travel_app/widgets/flights_list/flight_card.dart';
@@ -16,7 +15,6 @@ class _FlightListState extends State<FlightList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFd9d9d9),
       body: SingleChildScrollView(
         child: Column(
           children: [

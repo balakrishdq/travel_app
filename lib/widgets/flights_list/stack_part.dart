@@ -12,6 +12,10 @@ class StackPart extends StatelessWidget {
         Container(
           height: 300,
           decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(20),
+              bottomRight: Radius.circular(20),
+            ),
             image: DecorationImage(
               image: AssetImage('assets/images/backgroundImage.jpg'),
               fit: BoxFit.cover,
