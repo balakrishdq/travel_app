@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:travel_app/screens/search_screen.dart';
 import 'package:travel_app/widgets/boarding_screen/flight_ticket.dart';
 
 class BoardingScreen extends StatefulWidget {
+  static const routeName = '/boarding-screen';
   const BoardingScreen({super.key});
 
   @override
@@ -81,7 +83,9 @@ class _BoardingScreenState extends State<BoardingScreen> {
               height: 40,
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(SearchScreen.routeName);
+                },
                 child: Text('Download Ticket'),
                 style: ElevatedButton.styleFrom(
                   onPrimary: Colors.white,

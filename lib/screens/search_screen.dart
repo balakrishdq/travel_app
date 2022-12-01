@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/widgets/search_screen/ticket_card.dart';
 
 class SearchScreen extends StatefulWidget {
+  static const routeName = '/search-screen';
   const SearchScreen({super.key});
 
   @override

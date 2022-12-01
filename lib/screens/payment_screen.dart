@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:travel_app/screens/flight_list.dart';
-import 'package:travel_app/widgets/boarding_screen/flight_ticket.dart';
+import 'package:travel_app/screens/boarding_screen.dart';
 import 'package:travel_app/widgets/booking_screen/card_with_data.dart';
 import 'package:travel_app/widgets/flights_list/flight_card.dart';
 import 'package:travel_app/widgets/payment_screen/paying_platforms.dart';
 
 class PaymentScreen extends StatefulWidget {
+  static const routeName = '/payment-screen';
   const PaymentScreen({super.key});
 
   @override
@@ -58,7 +58,9 @@ class _PaymentScreenState extends State<PaymentScreen> {
                 height: 40,
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(BoardingScreen.routeName);
+                  },
                   child: Text('Proceed'),
                   style: ElevatedButton.styleFrom(
                     onPrimary: Colors.white,

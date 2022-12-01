@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dash/flutter_dash.dart';
 import 'package:gap/gap.dart';
+import 'package:travel_app/screens/payment_screen.dart';
 
 class FlightSeatSelection extends StatelessWidget {
   const FlightSeatSelection({super.key});
@@ -104,7 +105,9 @@ class FlightSeatSelection extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       primary: Colors.green,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(PaymentScreen.routeName);
+                    },
                     child: Text(
                       'Business',
                       style: TextStyle(

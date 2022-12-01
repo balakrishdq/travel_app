@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:travel_app/screens/flight_list.dart';
 
 class CardWithData extends StatelessWidget {
   const CardWithData({super.key});
@@ -115,7 +116,10 @@ class CardWithData extends StatelessWidget {
                   SizedBox(
                       height: 35,
                       child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context)
+                                .pushNamed(FlightList.routeName);
+                          },
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [

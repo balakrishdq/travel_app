@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:travel_app/screens/booking_screen.dart';
+import 'package:travel_app/screens/flight_list.dart';
 
 class WelcomeScreen extends StatelessWidget {
+  static const routName = '/';
   const WelcomeScreen({super.key});
 
   @override
@@ -47,7 +50,9 @@ class WelcomeScreen extends StatelessWidget {
                       'Get Tickets',
                       style: TextStyle(color: Colors.white),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(BookingScreen.routeName);
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blueGrey.shade700,
                     ),

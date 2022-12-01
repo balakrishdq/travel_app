@@ -7,6 +7,7 @@ import 'package:travel_app/widgets/booking_screen/swap_vert.dart';
 import 'package:travel_app/widgets/booking_screen/title_and_profile.dart';
 
 class BookingScreen extends StatefulWidget {
+  static const routeName = '/booking-screen';
   const BookingScreen({super.key});
 
   @override

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/selecting_seats.dart';
 import 'package:travel_app/widgets/flight_bookiing/head_stack.dart';
 import 'package:travel_app/widgets/flight_bookiing/journey_details.dart';
 import 'package:travel_app/widgets/search_screen/ticket_card.dart';
 
 class FlightBook extends StatefulWidget {
+  static const routeName = '/flight-book';
   const FlightBook({super.key});
 
   @override
@@ -36,7 +38,9 @@ class _FlightBookState extends State<FlightBook> {
               height: 40,
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(SelectingSeats.routeName);
+                },
                 child: Text('Search Flight'),
                 style: ElevatedButton.styleFrom(
                   onPrimary: Colors.white,

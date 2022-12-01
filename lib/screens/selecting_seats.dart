@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dash/flutter_dash.dart';
 import 'package:gap/gap.dart';
+import 'package:travel_app/screens/payment_screen.dart';
 import 'package:travel_app/widgets/selecting_seats/business_seats.dart';
 import 'package:travel_app/widgets/selecting_seats/economy_seats.dart';
 import 'package:travel_app/widgets/selecting_seats/flight_seat_selection.dart';
-import 'package:travel_app/widgets/selecting_seats/single_seat.dart';
 
 class SelectingSeats extends StatefulWidget {
+  static const routeName = '/selecting-seats';
   const SelectingSeats({super.key});
 
   @override

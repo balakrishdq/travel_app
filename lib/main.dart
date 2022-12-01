@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/boarding_screen.dart';
+import 'package:travel_app/screens/booking_screen.dart';
+import 'package:travel_app/screens/flight_book.dart';
+import 'package:travel_app/screens/flight_list.dart';
+import 'package:travel_app/screens/payment_screen.dart';
+import 'package:travel_app/screens/search_screen.dart';
 import 'package:travel_app/screens/selecting_seats.dart';
+import 'package:travel_app/screens/welcome_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +26,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         backgroundColor: Colors.white,
       ),
-      home: const SelectingSeats(),
+      initialRoute: '/',
+      routes: {
+        '/': (ctx) => WelcomeScreen(),
+        BookingScreen.routeName: (context) => BookingScreen(),
+        FlightList.routeName: (context) => FlightList(),
+        FlightBook.routeName: (context) => FlightBook(),
+        SelectingSeats.routeName: (context) => SelectingSeats(),
+        PaymentScreen.routeName: (context) => PaymentScreen(),
+        BoardingScreen.routeName: (context) => BoardingScreen(),
+        SearchScreen.routeName: (context) => SearchScreen(),
+      },
     );
   }
 }
