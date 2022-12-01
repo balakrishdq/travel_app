@@ -30,11 +30,15 @@ class CardWithData extends StatelessWidget {
             children: [
               Stack(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(20),
-                    child: Image(
-                      image: AssetImage(
-                        'assets/images/flight1.jpg',
+                  Container(
+                    height: 180,
+                    width: double.infinity,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image(
+                        image: AssetImage(
+                          'assets/images/flight1.jpg',
+                        ),
                       ),
                     ),
                   ),
