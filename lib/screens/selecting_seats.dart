@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dash/flutter_dash.dart';
+import 'package:gap/gap.dart';
+import 'package:travel_app/widgets/selecting_seats/business_seats.dart';
+import 'package:travel_app/widgets/selecting_seats/economy_seats.dart';
+import 'package:travel_app/widgets/selecting_seats/flight_seat_selection.dart';
+import 'package:travel_app/widgets/selecting_seats/single_seat.dart';
 
 class SelectingSeats extends StatefulWidget {
   const SelectingSeats({super.key});
@@ -31,7 +37,18 @@ class _SelectingSeatsState extends State<SelectingSeats> {
           ),
         ),
       ),
-      body: Container(),
+      body: Container(
+        child: Column(
+          children: [
+            Gap(10),
+            FlightSeatSelection(),
+            Gap(10),
+            BusinessSeats(),
+            Gap(30),
+            EconomySeats(),
+          ],
+        ),
+      ),
     );
   }
 }
