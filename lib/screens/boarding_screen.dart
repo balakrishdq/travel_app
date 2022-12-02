@@ -19,12 +19,8 @@ class _BoardingScreenState extends State<BoardingScreen> {
           Stack(
             children: [
               Container(
-                height: 300,
+                height: 280,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(20),
-                    bottomRight: Radius.circular(20),
-                  ),
                   image: DecorationImage(
                     image: AssetImage('assets/images/backgroundImage.jpg'),
                     fit: BoxFit.cover,
@@ -36,10 +32,15 @@ class _BoardingScreenState extends State<BoardingScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      Icons.arrow_back,
+                    IconButton(
+                      icon: Icon(
+                        Icons.arrow_back,
+                        size: 33,
+                      ),
                       color: Colors.white,
-                      size: 35,
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
                     ),
                     CircleAvatar(
                       backgroundImage: AssetImage('assets/images/profile.jpg'),
@@ -55,7 +56,7 @@ class _BoardingScreenState extends State<BoardingScreen> {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.green,
+                        color: Colors.blueGrey.shade700,
                         blurRadius: 2,
                         spreadRadius: 1,
                         offset: Offset(1, 0),
@@ -71,7 +72,7 @@ class _BoardingScreenState extends State<BoardingScreen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 140),
+                padding: const EdgeInsets.only(top: 130),
                 child: FlightTicket(),
               ),
             ],
@@ -88,7 +89,7 @@ class _BoardingScreenState extends State<BoardingScreen> {
                 child: Text('Download Ticket'),
                 style: ElevatedButton.styleFrom(
                   onPrimary: Colors.white,
-                  primary: Colors.green,
+                  primary: Colors.blueGrey.shade700,
                 ),
               ),
             ),

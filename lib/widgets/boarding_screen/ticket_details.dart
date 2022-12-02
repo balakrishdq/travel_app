@@ -100,7 +100,7 @@ class TicketDetails extends StatelessWidget {
           direction: Axis.horizontal,
           dashBorderRadius: 2,
           dashLength: 4,
-          length: 340,
+          length: 320,
         ),
       ],
     );

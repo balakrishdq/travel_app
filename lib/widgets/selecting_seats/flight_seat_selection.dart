@@ -71,7 +71,7 @@ class FlightSeatSelection extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w700,
-                      color: Colors.greenAccent,
+                      color: Colors.blueGrey.shade700,
                     ),
                   ),
                 ],
@@ -103,7 +103,7 @@ class FlightSeatSelection extends StatelessWidget {
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.green,
+                      primary: Colors.blueGrey.shade700,
                     ),
                     onPressed: () {
                       Navigator.of(context).pushNamed(PaymentScreen.routeName);

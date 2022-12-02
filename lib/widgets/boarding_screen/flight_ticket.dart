@@ -54,7 +54,7 @@ class FlightTicket extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 100,
+          bottom: 120,
           left: 4,
           child: CircleAvatar(
             backgroundColor: Color(0xffe6e6e6),
@@ -62,7 +62,7 @@ class FlightTicket extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 100,
+          bottom: 120,
           right: 4,
           child: CircleAvatar(
             backgroundColor: Color(0xffe6e6e6),

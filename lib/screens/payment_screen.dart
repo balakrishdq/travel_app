@@ -22,7 +22,9 @@ class _PaymentScreenState extends State<PaymentScreen> {
         centerTitle: true,
         elevation: 0.0,
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
             icon: Icon(
               Icons.arrow_back,
               color: Colors.black,
@@ -64,7 +66,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                   child: Text('Proceed'),
                   style: ElevatedButton.styleFrom(
                     onPrimary: Colors.white,
-                    primary: Colors.green,
+                    primary: Colors.blueGrey.shade700,
                   ),
                 ),
               ),

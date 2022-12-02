@@ -22,7 +22,7 @@ class TabbarWidget extends StatelessWidget {
         child: TabBar(
           unselectedLabelColor: Colors.black,
           indicator: BoxDecoration(
-            color: Colors.green,
+            color: Colors.blueGrey.shade700,
             borderRadius: BorderRadius.circular(20),
           ),
           tabs: [

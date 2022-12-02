@@ -54,20 +54,20 @@ class CardWithData extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.brown,
+                              color: Color(0xff00ABB3),
                               blurRadius: 2,
                               spreadRadius: 0.5,
                               offset: Offset(0, 1),
                             ),
                           ]),
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: Text(
                           "\$${5799}",
                           style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                          ),
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),
@@ -102,7 +102,7 @@ class CardWithData extends StatelessWidget {
                     WidgetSpan(
                         child: Icon(
                       Icons.timer_outlined,
-                      color: Colors.green,
+                      color: Color(0xff00ABB3),
                     )),
                     TextSpan(
                       text: '10.00 AM-12.00 AM',
@@ -126,12 +126,12 @@ class CardWithData extends StatelessWidget {
                               Text(
                                 'Book now',
                                 style: TextStyle(
-                                  color: Colors.green,
+                                  color: Colors.blueGrey.shade700,
                                 ),
                               ),
                               Icon(
                                 Icons.arrow_right,
-                                color: Colors.green,
+                                color: Colors.blueGrey.shade700,
                               ),
                             ],
                           )))

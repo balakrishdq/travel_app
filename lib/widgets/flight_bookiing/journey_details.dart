@@ -132,7 +132,7 @@ class JourneyDetails extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.green,
+                        color: Colors.blueGrey.shade700,
                         blurRadius: 1,
                       ),
                     ],
@@ -156,7 +156,7 @@ class JourneyDetails extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.green,
+                        color: Colors.blueGrey.shade700,
                         blurRadius: 1,
                       ),
                     ],
@@ -180,7 +180,7 @@ class JourneyDetails extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.green,
+                        color: Colors.blueGrey.shade700,
                         blurRadius: 1,
                       ),
                     ],

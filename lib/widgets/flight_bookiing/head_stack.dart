@@ -19,8 +19,26 @@ class HeadStack extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            child: TitleAndProfile(headline: "Book your\nFlight"),
+          Padding(
+            padding: const EdgeInsets.only(top: 30),
+            child: IconButton(
+              icon: Icon(
+                Icons.arrow_back,
+                size: 33,
+              ),
+              color: Colors.white,
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 30.0,
+            ),
+            child: Container(
+              child: TitleAndProfile(headline: "Book your\nFlight"),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 160),

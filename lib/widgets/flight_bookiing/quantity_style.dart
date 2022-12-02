@@ -38,7 +38,7 @@ class QuantityStyle extends StatelessWidget {
             size: 35,
           ),
           CircleAvatar(
-            backgroundColor: Colors.green,
+            backgroundColor: Colors.blueGrey.shade700,
             maxRadius: 15,
             child: Icon(
               Icons.add,

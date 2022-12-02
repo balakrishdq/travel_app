@@ -12,17 +12,17 @@ class FromToField extends StatelessWidget {
           decoration: InputDecoration(
             prefixIcon: Icon(
               Icons.flight_takeoff,
-              color: Colors.green,
+              color: Color(0xff00ABB3),
             ),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.green,
+                color: Colors.blueGrey.shade700,
                 width: 3.0,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.green,
+                color: Colors.blueGrey.shade700,
                 width: 3.0,
               ),
             ),
@@ -39,19 +39,19 @@ class FromToField extends StatelessWidget {
           decoration: InputDecoration(
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.green,
+                color: Colors.blueGrey.shade700,
                 width: 3.0,
               ),
             ),
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.green,
+                color: Colors.blueGrey.shade700,
                 width: 3.0,
               ),
             ),
             prefixIcon: Icon(
               Icons.flight_land,
-              color: Colors.green,
+              color: Color(0xff00ABB3),
             ),
             hintText: 'To',
             labelText: 'Barstow,BSW',

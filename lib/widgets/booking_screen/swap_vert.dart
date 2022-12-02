@@ -6,13 +6,14 @@ class SwapVert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: 270,
+      top: 275,
       left: 260,
       child: CircleAvatar(
-        backgroundColor: Colors.green,
-        maxRadius: 30,
+        backgroundColor: Colors.blueGrey.shade700,
+        maxRadius: 25,
         child: Icon(
           Icons.swap_vert,
+          color: Color(0xff00ABB3),
           size: 35,
         ),
       ),

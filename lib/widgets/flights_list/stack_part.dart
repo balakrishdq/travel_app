@@ -27,10 +27,15 @@ class StackPart extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(
-                Icons.arrow_back,
+              IconButton(
+                icon: Icon(
+                  Icons.arrow_back,
+                  size: 33,
+                ),
                 color: Colors.white,
-                size: 35,
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
               ),
               CircleAvatar(
                 backgroundImage: AssetImage('assets/images/profile.jpg'),

@@ -57,7 +57,7 @@ class PayingPlatform extends StatelessWidget {
                               width: 3,
                               color: Colors.white,
                             ),
-                            color: Colors.orange,
+                            color: Colors.blueGrey.shade700,
                           ),
                           child: Icon(
                             Icons.done,

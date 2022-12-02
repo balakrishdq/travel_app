@@ -30,10 +30,15 @@ class _SearchScreenState extends State<SearchScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(
-                    Icons.arrow_back,
+                  IconButton(
+                    icon: Icon(
+                      Icons.arrow_back,
+                      size: 33,
+                    ),
                     color: Colors.white,
-                    size: 35,
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
                   ),
                   CircleAvatar(
                     backgroundImage: AssetImage('assets/images/profile.jpg'),
@@ -55,7 +60,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.green,
+                      color: Colors.blueGrey.shade700,
                       spreadRadius: 0.5,
                       blurRadius: 2,
                       offset: Offset(1, 0),
@@ -68,10 +73,10 @@ class _SearchScreenState extends State<SearchScreen> {
                     maxLines: 1,
                     decoration: InputDecoration(
                       enabledBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.green),
+                        borderSide: BorderSide(color: Colors.blueGrey.shade700),
                       ),
                       focusedBorder: UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.green),
+                        borderSide: BorderSide(color: Colors.blueGrey.shade700),
                       ),
                       icon: Icon(
                         Icons.search_outlined,

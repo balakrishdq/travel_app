@@ -44,7 +44,7 @@ class _FlightBookState extends State<FlightBook> {
                 child: Text('Search Flight'),
                 style: ElevatedButton.styleFrom(
                   onPrimary: Colors.white,
-                  primary: Colors.green,
+                  primary: Colors.blueGrey.shade700,
                 ),
               ),
             ),

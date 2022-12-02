@@ -21,7 +21,9 @@ class _SelectingSeatsState extends State<SelectingSeats> {
         centerTitle: true,
         elevation: 0.0,
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
             icon: Icon(
               Icons.arrow_back,
               color: Colors.black,
