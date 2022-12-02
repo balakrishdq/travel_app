@@ -38,6 +38,7 @@ class WelcomeScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     color: Colors.grey.shade50,
+                    fontSize: 18,
                   ),
                 ),
                 Gap(20),
