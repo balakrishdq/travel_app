@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:travel_app/screens/booking_screen.dart';
-import 'package:travel_app/screens/flight_list.dart';
 
 class WelcomeScreen extends StatelessWidget {
   static const routName = '/';

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:travel_app/screens/payment_screen.dart';
 import 'package:travel_app/widgets/selecting_seats/business_seats.dart';
 import 'package:travel_app/widgets/selecting_seats/economy_seats.dart';
 import 'package:travel_app/widgets/selecting_seats/flight_seat_selection.dart';

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:travel_app/screens/search_screen.dart';
 import 'package:travel_app/widgets/boarding_screen/flight_ticket.dart';
 
