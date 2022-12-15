@@ -2,15 +2,11 @@
 
 A new Flutter project.
 
-## Getting Started
+The ui is created with the reference of given below
+![Screenshot from 2022-12-15 20-04-47](https://user-images.githubusercontent.com/49632776/207887878-1e3a477b-1e75-4712-a1b4-ebf0432f7da1.png)
+![preview (1)](https://user-images.githubusercontent.com/49632776/207887924-859883df-15ad-472c-bf92-e38ea067e82e.png)
 
-This project is a starting point for a Flutter application.
+![Screenshot from 2022-12-15 19-56-45](https://user-images.githubusercontent.com/49632776/207886376-c60ffa5a-447b-437e-91ec-fe62c37035fb.png)
+![Screenshot from 2022-12-15 19-56-36](https://user-images.githubusercontent.com/49632776/207886441-70568d47-3c7a-4828-b744-5145c34bca68.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
